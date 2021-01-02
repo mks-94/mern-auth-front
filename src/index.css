@@ -1,13 +1,83 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #2f1dd4;
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 1rem;
+}
+
+/* general */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header styles */
+#header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: tomato;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 1rem;
+  color: antiquewhite;
+}
+
+#header .auth-options {
+  height: 100%;
+  display: flex;
+}
+
+#header .auth-options button {
+  padding: 0 1rem;
+  color: antiquewhite;
+  background-color: brown;
+  font-size: 1.1rem;
+}
+
+#header .auth-options button:hover {
+  background-color: coral;
+}
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+
+  #header .auth-options button {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
 }
