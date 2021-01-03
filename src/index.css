@@ -78,7 +78,7 @@ body {
   font-size: 1.1rem;
 }
 #header .auth-options button:hover {
-  background-color: #be3a3a;
+  background-color: #e9922e;
 }
 
 /* form */
@@ -114,6 +114,24 @@ body {
   border-radius: 8px;
   background-color: #c8ecb7;
   font-size: 1.1rem;
+}
+
+/* error notice */
+.error-notice {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #e72f2f;
+  background-color: salmon;
+  border-radius: 5px;
+}
+
+.error-notice button {
+  background-color: #d82f2f;
+  border-radius: 50%;
+  color: white;
 }
 
 /* media queries */
